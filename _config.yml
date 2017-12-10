@@ -11,6 +11,72 @@ sass:
   sass_dir: _sass
   style: compressed
 
+gallery:
+  dir: galeria
+  galleries:
+    _site:
+      hidden: true
+    2014-11-30-ikastola_de_zeberio:
+      name: Ikastola de Zeberio
+    2014-11-30-oficina:
+      name: Oficina
+    2014-12-01-colegio_publico_legarda:
+      name: Colegia público Legarda
+    2014-12-01-gimnasio_ikastola_karrantza_cep:
+      name: Gimnasio Ikastola Karrantza CEP
+    2014-12-01-imd_ermua:
+      name: IMD Ermua
+    2014-12-01-nivel_3:
+      name: Nivel 3
+    2014-12-01-oficina_parke_teknolikoa:
+      name: Oficina Parke Teknolikoa
+    2014-12-01-pabellon_deportivo_legarda_mungia:
+      name: Pabellón deportivo Legarda, Mungia
+    2014-12-06-garriges_abogados_bilbao_y_vitoria:
+      name: Garriges abogados Bilbao y Vitoria
+    2014-12-06-hotel_holliday_inn:
+      name: Hotel Holliday Inn
+    2014-12-06-obra_social_anesvad:
+      name: Obra social Anesvad
+    2014-12-06-revestimiento_integral_salon_de_actos:
+      name: Revestimiento integral salón de actos
+    2014-12-07-salas-de-apuestas-reta:
+      name: Salas de apuestas RETA
+    2014-12-06-torre_iberdrola:
+      name: Torre Iberdrola
+    2014-12-07-guarderia-casco-viejo-vitoria:
+      name: Guardería casco viejo Vitoria
+    2014-12-07-naviera_murueta:
+      name: Naviera Murueta
+    2014-12-07-norbolsa:
+      name: Norbolsa
+    2014-12-07-piso_gran_via:
+      name: Piso Gran Vía
+    2014-12-07-revestimiento_de_bambu_en_txoko_zeberio:
+      name: Revestimiento de bambú en Txoko Zeberio
+    2014-12-07-upv_leioa:
+      name: UPV Leioa
+    2014-12-30-torre-iberdrola:
+      name: Torre Iberdrola
+    2015-03-12-banco_santander_gran_via:
+      name: Banco Santander, Gran Vía
+    2015-03-12-elecnor_oficinas_gardoki:
+      name: Elecnor, oficinas Gardoki
+    2015-03-12-gestamp:
+      name: Gestamp
+    2015-11-15-accesos_y_palcos_vip_de_san_mames:
+      name: Accesos y palcos VIP de San Mames
+    2015-11-16-colegio_menesiano_de_santo_domingo_de_la_calzada:
+      name: Colegio Menesiano de Santo Domingo de la Calzada
+    2015-11-18-centro_de_jubilados_de_aperribai:
+      name: Centro de jubilados de Aperribai
+    2015-11-19-bodegas_riojanas:
+      name: Bodegas Riojanas
+    2015-12-02-ultimos_detalles_de_los_palcos_vip_de_san_mames:
+      name: Últimos detalles de los palcos VIP de San Mames
+    2015-12-06-oficinas_electro:
+      name: Oficinas Electro
+
 plugins:
 - jekyll-gallery-generator
 - bourbon
