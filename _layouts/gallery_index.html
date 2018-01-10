@@ -1,23 +1,17 @@
 ---
 layout: default
 ---
-<style TYPE="text/css">
-.gallery-wrapper {
-  width: 35em;
-  text-align: center;
-  padding: 1em 0 4em 0;
-}
-.gallery-best-image{
-  max-height: 20em;
-  max-width: 20em;
-}
-</style>
-{% for gallery in page.galleries %}
-<div class="gallery-wrapper">
-    <a href="{{ gallery['gallery'] }}">
-        <img class="gallery-best-image" src="{{ gallery['gallery'] }}/thumbs/{{ gallery['best_image'] }}">
+
+<div class="gallery">
+  {% for gallery in page.galleries %}
+    <a href="{{ gallery['gallery'] }}" class="card  gallery__item" style="background-image: url({{ gallery['gallery'] }}/thumbs/{{ gallery['best_image'] }});">
+      <h4 class="gallery__title">{{ gallery['name'] }}</h4>
     </a>
-    <h3><a href="{{ gallery['gallery'] }}">{{ gallery["name"] }}</a></h3>
-    {{ gallery["images"] | size }} image{% if gallery["images"].size != 1 %}s{% endif %}
+  {% endfor %}
 </div>
-{% endfor %}
+
+<div class="mixitup-pagination"></div>
+
+<script src="/assets/js/mixitup.min.js"></script>
+<script src="/assets/js/mixitup-pagination.min.js"></script>
+<script src="/assets/js/gallery_index.js"></script>
