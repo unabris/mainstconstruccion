@@ -1,0 +1,19 @@
+<!doctype html>
+
+<html>
+  {% include head.html %}
+  <body>
+    {% include sections/navbar.html %}
+    <main class="content">
+      <div class="content-wrapper">
+        <div class="card  card__padding">
+          {% if page.title %}
+            <h2 class="title">{{ page.title }}</h2>
+          {% endif%}
+          {{ content }}
+        </div>
+      </div>
+    </main>
+    {% include sections/footer.html %}
+  </body>
+</html>
