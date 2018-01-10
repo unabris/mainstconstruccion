@@ -1,0 +1,40 @@
+---
+layout: default
+title: Contacto
+permalink: /contacto/
+---
+
+<div class="contact">
+  <div class="contact__column">
+    <form class="form" id="contact_form" action="https://formspree.io/{{ site.form.email }}" method="POST">
+      <div class="form__message"></div>
+
+      <input class="form__input" type="text" name="Name" placeholder="Nombre*" required />
+      <input class="form__input" type="email" name="E-mail" placeholder="Email*" required />
+      <textarea class="form__input" name="Message" placeholder="Mensaje*" required></textarea>
+      <div class="form__captcha  g-recaptcha" data-sitekey="{{ site.form.recaptcha_key }}"></div>
+
+      <input class="form__submit" type="submit" value="Enviar" />
+
+      <input type="hidden" name="_language" value="es" />
+    </form>
+  </div>
+
+  <div class="contact__column">
+    <ul class="list">
+      {% for contact in site.data.contact %}
+        <li class="list__item">
+          <i class="fa  fa-fw  fa-{{ contact.icon }}  list__icon"></i>
+          {% if contact.link %}
+            <a href="{{ contact.link }}">{{ contact.value }}</a>
+          {% else %}
+            {{ contact.value }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="/assets/js/contact.js"></script>
