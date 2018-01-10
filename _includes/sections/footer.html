@@ -1,0 +1,34 @@
+<footer class="footer">
+  <div class="footer-wrapper">
+
+    <div class="columns">
+
+      <div class="columns__column">
+        <h4>Contenido</h4>
+        <ul class="list">
+          <li class="list__item  list__item--dark"><a href="/">Inicio</a></li>
+          <li class="list__item  list__item--dark"><a href="/galeria/">Galería</a></li>
+          <li class="list__item  list__item--dark"><a href="/contacto/">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="columns__column">
+        <h4>Contacto</h4>
+        <ul class="list">
+          {% for contact in site.data.contact %}
+            <li class="list__item  list__item--dark">
+              <i class="fa  fa-fw  fa-{{ contact.icon }}  list__icon"></i>
+              {% if contact.link %}
+                <a href="{{ contact.link }}">{{ contact.value }}</a>
+              {% else %}
+                {{ contact.value }}
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
