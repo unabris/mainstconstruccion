@@ -1,0 +1,15 @@
+- icon: envelope
+  link: mailto:contacto@mainstconstruccion.com
+  value: contacto@mainstconstruccion.com
+
+- icon: phone
+  link: tel:+34663805241
+  value: 663 805 241
+
+- icon: building
+  link:
+  value: "Oficina: C/ Jose M. de Barandiarán 33, Santurtzi"
+
+- icon: archive
+  link:
+  value: "Almacén: C/ Axular 1, Portugalete"
