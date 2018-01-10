@@ -1,0 +1,30 @@
+.cta
+  padding: .5em 1em
+  box-sizing: border-box
+  border: 2px solid $link-font-color
+  font-weight: bold
+  border-radius: 2px
+
+  &:hover
+    border-color: darken($link-font-color, 10%)
+
+  &--solid
+    background-color: $link-font-color
+    color: white
+
+    &:hover
+      background-color: darken($link-font-color, 10%)
+      color: white
+
+  &--transparent
+
+    &:hover
+      color: darken($link-font-color, 10%)
+
+  &--center
+    width: fit-content
+    margin: 0 auto
+    display: block
+
+  &--margin
+    margin-top: 4rem

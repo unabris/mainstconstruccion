@@ -1,0 +1,27 @@
+.mixitup
+
+  &-pagination
+    width: 100%
+    display: flex
+    justify-content: center
+
+  &-control
+    +size(3.6rem)
+    text-align: center
+    line-height: 3.6rem
+    cursor: pointer
+    color: $link-font-color
+    font-weight: bold
+
+    &:not(:last-child)
+      margin-right: .5em
+
+    &-disabled, &-active
+      color: #c8c8c8
+      cursor: auto
+
+    &-disabled
+      background: transparent
+
+    &-active
+      background: #f5f5f5

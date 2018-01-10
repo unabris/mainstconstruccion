@@ -1,0 +1,31 @@
+.form
+
+  #{$all-text-inputs}
+    width: 100%
+    min-width: 100%
+    max-width: 100%
+    border: 1px solid #dadada
+    margin-bottom: 1rem
+
+  textarea
+    min-height: 15rem
+
+  #{$all-buttons}
+    width: 50%
+    background-color: $link-font-color
+    color: white
+    border: none
+
+  #{$all-text-inputs}, #{$all-buttons}
+    outline: none
+    padding: .4em .8em
+    box-sizing: border-box
+    border-radius: 2px
+
+  &__captcha
+    margin-bottom: calc(1rem - 2px)
+    margin-top: -5px
+
+  &__message
+    margin-bottom: 1rem
+    display: none
