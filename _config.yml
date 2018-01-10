@@ -11,8 +11,14 @@ sass:
   sass_dir: _sass
   style: compressed
 
+form:
+  recaptcha_key: 6LcMYh4TAAAAAFeiRrk979A3KEVFSwcfsp_q3h_V
+  email: contacto@mainstconstruccion.com
+
 gallery:
   dir: galeria
+  title: Galería
+  title_prefix: ""
   galleries:
     _site:
       hidden: true
