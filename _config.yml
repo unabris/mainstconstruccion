@@ -87,3 +87,8 @@ plugins:
 - jekyll-gallery-generator
 - bourbon
 - neat
+
+exclude:
+- Gemfile
+- Gemfile.lock
+- firebase.json
