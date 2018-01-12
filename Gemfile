@@ -3,6 +3,7 @@ ruby RUBY_VERSION
 
 gem 'jekyll'
 gem 'rmagick'
+gem 'html-proofer'
 
 group :jekyll_plugins do
   gem 'jekyll-gallery-generator'
