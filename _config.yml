@@ -11,10 +11,6 @@ sass:
   sass_dir: _sass
   style: compressed
 
-form:
-  recaptcha_key: 6LcMYh4TAAAAAFeiRrk979A3KEVFSwcfsp_q3h_V
-  email: contacto@mainstconstruccion.com
-
 gallery:
   dir: galeria
   title: Galería
@@ -87,3 +83,8 @@ plugins:
 - jekyll-gallery-generator
 - bourbon
 - neat
+
+exclude:
+- Gemfile
+- Gemfile.lock
+- firebase.json

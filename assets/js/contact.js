@@ -2,11 +2,7 @@ $(function() {
   $('#contact_form').submit(function(e) {
     e.preventDefault();
 
-    if(grecaptcha.getResponse() == "") {
-      alert('Are you a robot?');
-    } else {
-      submitForm(this);
-    }
+    submitForm(this);
   });
 
   $('#contact_form  .form__message').click(function() {
@@ -19,7 +15,7 @@ $(function() {
     $.ajax({
       url: $(element).attr('action'),
       method: "POST",
-      data: $.grep($(element).serializeArray(), function(e) { return e.name != 'g-recaptcha-response'; }),
+      data: $(element).serializeArray(),
       dataType: "json",
       beforeSend: function() {
         sendButton.prop('disabled', true);
